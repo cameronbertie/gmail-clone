@@ -9,7 +9,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 
 function Header() {
   return (
-    <div class="header">
+    <div className="header">
       <div className="header__left">
         <IconButton>
           <MenuIcon />
