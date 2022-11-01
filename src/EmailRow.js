@@ -20,7 +20,7 @@ function EmailRow({ id, title, subject, description, time }) {
         </IconButton>
       </div>
 
-      <div className="emailRow__title">{title}</div>
+      <div className="emailRow__title"><h4>{title}</h4></div>
 
       <div className="emailRow__message">
         <h4>
