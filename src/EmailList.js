@@ -21,15 +21,15 @@ function EmailList() {
 
   useEffect(() => {
     onSnapshot(
-    query(collection(db, "emails"), orderBy("timestamp", "desc")),
-    (snapshot) => {
-      setEmails(
-        snapshot.docs.map((doc) => ({
-          id: doc.id,
-          data: doc.data(),
-        }))
-      );
-    }
+      query(collection(db, "emails"), orderBy("timestamp", "desc")),
+      (snapshot) => {
+        setEmails(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        );
+      }
     );
   }, []);
 
@@ -80,6 +80,90 @@ function EmailList() {
             time={new Date(timestamp?.seconds * 1000).toUTCString()}
           />
         ))}
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is a test"
+          time="10pm"
+        />
+        <EmailRow
+          title="Twitch"
+          subject="Hey fellow streamer!!!"
+          description="This is DOPE"
+          time="10pm"
+        />
         <EmailRow
           title="Twitch"
           subject="Hey fellow streamer!!!"
